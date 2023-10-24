@@ -1,0 +1,177 @@
+
+Exercice 1:
+
+  <<Expression>>	  <<Type>>	  <<Valeur>>
+ p + 3	                 int	          13
+ c + 1	                 char	          '\x02'
+ p + c	                 int	          11
+ 3 * p + 5 * c	         int	           61
+
+======================
+Exercice 2:
+
+  <<Expression>>	    <<Type>>	          <<Valeur>>
+ n + c + p	           int	                 1005
+ 2 * x + c 	           float	         3.5
+ (char) n + c	           char	                 '\x05'
+ (float) z + n / 2	   float	         6.5
+
+======================
+Exercice 3:
+
+  <<Instruction>>	         <<Valeurs des variables>>
+ q = n < p;	                q = false;
+ q = n == p;	                q = false;
+ q = p % n + p > n;	        q = false;
+ x = p / n;	                x = 0.9;
+ x = (float) p / n;	        x = 0.9;
+ x = (p + 0.5) / n;	        x = 1.0;
+ x = (int) (p + 0.5) / n;	x = 1;
+ q = n * (p > n ? n : p);	q = 5;
+ q = n * (p < n ? n : p);	q = 9;
+
+======================
+Exercice 4:
+
+ <<Résultat>>
+ A : i = 0, n = 0 |
+ B : i = 11, n = 11 |
+ C : i = 25, j = 6, n = 30 |
+ D : i = 18, n = 18 |
+ E : i = 1, j = 4, n = 4 |
+
+======================
+Exercice 5:
+
+ <<Résultat>> 
+ A : n = 10, p = 10, q = 10, r = true 
+ B : n = 15, p = 15, q = 15 
+ C : n = 11, p = 11, q = 11 
+ D : n = 11, p = 11, q = 12 
+
+======================
+Exercice 6:
+
+ <<Résultat>>
+ A : n = 6, p = 3, q = true
+ B : n = 4, p = 3, q = false
+ C : n = 6, p = 4, q = true
+ D : n = 7, p = 4, q = false
+
+======================
+Exercice 7:
+
+Valeur de n	
+
+ <<Résultat>>
+ a. 0	Nul
+ b. 1	Petit
+ c. 4	Petit
+ d. 10	Grand
+ e. -5	Erreur
+
+======================
+Exercice 8:
+
+ <<Résultat>>
+
+ 0, 1, 2, 3, 4, 5 
+ 7 fois 
+
+======================
+Exercice 9:
+
+#include <iostream>
+using namespace std;
+
+int main() {
+  int num;
+  cin >> num;
+
+  float somme = 0;
+  for (int i = 1; i <= um; i++) {
+    somme += 1.0 / i;
+  }
+
+  cout << "La somme est : " << somme << endl;
+
+  return 0;
+}
+
+
+======================
+Exercice 10:
+
+#include <iostream>
+using namespace std;
+
+int main() {
+  int n;
+  cout << "Entrez un entier n : ";
+  cin >> n;
+
+  int u1 = 1;
+  int u2 = 1;
+  int un = 0;
+
+  if (n == 1 || n == 2) {
+    un = 1;
+  } else {
+    for (int i = 3; i <= n; i++) {
+      un = u1 + u2;
+      u1 = u2;
+      u2 = un;
+    }
+  }
+
+  cout << "La nième valeur de la suite de Fibonacci est : " << un << endl;
+
+  return 0;
+}
+
+
+======================
+Exercice 11:
+
+#include <iostream>
+using namespace std;
+
+int main() {
+  int num;
+  cout << "Combien de lignes ? ";
+  cin >> num;
+
+  for (int i = 1; i <= num; i++) {
+    for (int j = 1; j <= num - i; j++) {
+      cout << " ";
+    }
+    for (int j = 1; j <= 2 * i - 1; j++) {
+      cout << "*";
+    }
+    cout << endl;
+  }
+
+  return 0;
+}
+
+======================
+Exercice 12:
+
+
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main() {
+  for (int i = 1; i <= 10; i++) {
+    for (int j = 1; j <= 10; j++) {
+      cout << setw(3) << i * j << " ";
+    }
+    cout << endl;
+  }
+
+  return 0;
+}
+
+======================
+l'ex 13 est deja l'envye.
