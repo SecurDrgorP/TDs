@@ -1,0 +1,10 @@
+
+
+#Les résultats fournis par ce programme :
+
+** construction objet A : 2 1
+** construction objet B : 1 0
+** construction objet C : 3 3
+** construction objet A : 10 1
+** construction objet B : 1 0
+** construction objet C : 12 21

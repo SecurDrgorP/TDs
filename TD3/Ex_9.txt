@@ -1,0 +1,11 @@
+
+
+
+a. l'instruction p.affiche (tel que point<char>p (60,65)) est affiche:
+
+Coordonnees : < A 
+
+b. il faut modifier comme ca:
+
+point <int> p (60, 65) ;
+p.affiche () ;

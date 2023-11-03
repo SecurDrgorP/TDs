@@ -1,0 +1,10 @@
+
+
+
+1. il ya un error de syntax dans la fonction principal main: main() -> int main()
+
+2. si ce syntax est resolve donc:
+dans f : 999
+dans main : 999
+suite main
+
